@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <ListView prefHeight="200.0" prefWidth="200.0">
+            <HBox.margin>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </HBox.margin>
+         </ListView>
+         <Button mnemonicParsing="false" text="Solve task">
+            <HBox.margin>
+               <Insets top="20.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" text="Logout">
+            <HBox.margin>
+               <Insets left="20.0" top="20.0" />
+            </HBox.margin>
+         </Button>
+      </children></HBox>
+</StackPane>
