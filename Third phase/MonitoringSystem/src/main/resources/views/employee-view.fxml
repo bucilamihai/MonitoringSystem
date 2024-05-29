@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="400.0" prefWidth="600.0"
+           xmlns="http://javafx.com/javafx/17.0.2-ea"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="controller.EmployeeController">
+    <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+          <TableView fx:id="taskTable" prefHeight="360.0" prefWidth="252.0">
+              <columns>
+                  <TableColumn fx:id="descriptionColumn" prefWidth="122.20001375675201" text="Description" />
+                  <TableColumn fx:id="isSolvedColumn" prefWidth="115.79998779296875" text="Solved" />
+              </columns>
+          </TableView>
+         <Button fx:id="solveTaskButton" mnemonicParsing="false" text="Solve task" onAction="#handleSolveTask">
+            <HBox.margin>
+               <Insets top="20.0" />
+            </HBox.margin>
+         </Button>
+         <Button fx:id="logoutButton" mnemonicParsing="false" text="Logout" onAction="#handleLogout">
+            <HBox.margin>
+               <Insets left="20.0" top="20.0" />
+            </HBox.margin>
+         </Button>
+      </children>
+    </HBox>
+</StackPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="400.0" prefWidth="600.0"
+           xmlns="http://javafx.com/javafx/17.0.2-ea"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="controller.ManagerController">
+      <HBox prefHeight="400.0" prefWidth="681.0">
+          <TableView fx:id="employeeTable" prefHeight="360.0" prefWidth="252.0">
+            <columns>
+              <TableColumn fx:id="employeeNameColumn" prefWidth="122.20001375675201" text="employeeName" />
+              <TableColumn fx:id="lastLoginColumn" prefWidth="115.79998779296875" text="lastLogin" />
+            </columns>
+          </TableView>
+          <VBox prefHeight="400.0" prefWidth="168.0">
+                <TextArea fx:id="descriptionText" prefHeight="219.0" prefWidth="168.0" promptText="Task description" />
+                <Button mnemonicParsing="false" text="Send task" onAction="#handleSendTask">
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin></Button>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+          </VBox>
+          <VBox prefHeight="360.0" prefWidth="221.0">
+              <children>
+                  <TextField promptText="Enter employee name" fx:id="employeeNameTextField">
+                      <VBox.margin>
+                          <Insets left="20.0" />
+                      </VBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="129.0" text="Add employee" onAction="#handleAddEmployee">
+                      <VBox.margin>
+                          <Insets left="20.0" top="20.0" />
+                      </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Update employee's password" onAction="#handleUpdateEmployeePassword">
+                      <VBox.margin>
+                          <Insets left="20.0" top="20.0" />
+                      </VBox.margin></Button>
+                  <Button mnemonicParsing="false" text="Delete employee" onAction="#handleDeleteEmployee">
+                      <VBox.margin>
+                          <Insets left="20.0" top="20.0" />
+                      </VBox.margin></Button>
+                 </children>
+                  </VBox>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" text="Logout" onAction="#handleLogout">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+          <padding>
+             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+      </HBox>
+</StackPane>
